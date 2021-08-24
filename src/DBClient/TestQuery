@@ -1,0 +1,13 @@
+select last_name, birth_date from employees limit 10;
+
+
+select * from employees limit 20;
+
+
+select * from titles where title = 'Manager';
+
+
+select e.last_name, e.first_name, e.birth_date from employees e inner join  titles t on e.emp_no = t.emp_no where t.title = 'Manager';
+
+
+select e.*, t.title from employees e inner join  titles t on e.emp_no = t.emp_no where t.title = 'Manager';
